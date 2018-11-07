@@ -51,6 +51,7 @@ def main():
         print(idx, elem)
 
     plt.plot(dist)
+    plt.grid()
     plt.show()
     
 
