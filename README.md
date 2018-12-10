@@ -28,6 +28,11 @@ The data set is free to use for non-commercial purposes.
 
 - Skeleton data: [Skeleton](https://pan.baidu.com/s/1_k7hUam23iLRsU0ID8bldQ)
 
+If this data set is useful for your research, please refer to our paper: 
+
+Shengchao Li, Lin Zhang, and Xiumin Diao - [Improving Human Intention Prediction Using Data Augmentation](https://ieeexplore.ieee.org/document/8525781/keywords#keywords)
+  ([BibTeX](https://github.com/fantasylsc/Intention_Prediction/blob/master/Bib/LiZD18.bib))
+
 ## Others
 1. data_acquire: capture 3 sec video by Kinect V2 under Matlab and save the data.
 
