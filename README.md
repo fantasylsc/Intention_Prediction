@@ -1,6 +1,6 @@
 # Intention prediction 
 
-A introduction to intention prediction scenario and data set.
+An introduction to intention prediction scenario and data set.
 
 
 ## Experiment scenario
