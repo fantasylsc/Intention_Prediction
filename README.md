@@ -1,5 +1,20 @@
-# Brief Notes
+# Intention prediction 
 
+A introduction to intention prediction scenario and data set.
+
+
+## Experiment scenario
+
+
+
+
+## Data set
+
+
+
+
+
+## Others
 1. data_acquire: capture 3 sec video by Kinect V2 under Matlab and save the data.
 
 2. dataset_utils:
