@@ -16,9 +16,17 @@ The experiment is about a human participant pitching a ball toward a robot (repr
 
 ## Data set
 
+A data set of human intentions behind human actions. This data set is built from multiple human priticipants. The dataset contains RGB images, RGB-D images, and skeleton data of human actions.
+
+The data set is free to use for non-commercial purposes.
 
 
 
+- RGB images: [RGB-part1](https://pan.baidu.com/s/1qX14X9l2fYqx3DCZS0lwpw) [RGB-part2](https://pan.baidu.com/s/1LahYjJ32j6MkdBhk3Beksw) [RGB-part3](https://pan.baidu.com/s/1wHbBykIZuv-rydh02fyXnA) [RGB-part4](https://pan.baidu.com/s/1q9XqCx-fe--usnkd9Bc1lA) [RGB-part5](https://pan.baidu.com/s/1Qvyt94w2WGKpliqAdjlK6Q)
+
+- RGB-D images: [RGB-D-part1](https://pan.baidu.com/s/127n2swlXOplj88i2Lftsgw) [RGB-D-part2](https://pan.baidu.com/s/11Uu4VjhXyxVBYFT_Hioeng) [RGB-D-part3](https://pan.baidu.com/s/1-9GmlgnGm1zJ7VtjWpbKUg)
+
+- Skeleton data: [Skeleton](https://pan.baidu.com/s/1_k7hUam23iLRsU0ID8bldQ)
 
 ## Others
 1. data_acquire: capture 3 sec video by Kinect V2 under Matlab and save the data.
