@@ -16,17 +16,27 @@ The experiment is about a human participant pitching a ball toward a robot (repr
 
 ## Data set
 
-A data set of human intentions behind human actions. This data set is built from multiple human priticipants. The dataset contains RGB images, RGB-D images, and skeleton data of human actions.
+A data set of human intentions behind human actions. This data set is built from multiple human priticipants. The dataset contains RGB images, RGB-D images, skeleton data, and optical flow of human actions.
 
 The data set is free to use for non-commercial purposes.
 
+The dataset is hosted on [Hugging Face](https://huggingface.co/datasets/fantasylsc/intention-prediction) (about 27 GB). Its files are organized into `RGB_images`, `RGB-D_images`, `Skeleton_data`, and `Optical_flow` folders and provided as ZIP archives.
 
+- Install the Hugging Face Hub client: `pip install -U huggingface_hub`
+- Download the full dataset:
 
-- RGB images: [RGB-part1](https://pan.baidu.com/s/1qX14X9l2fYqx3DCZS0lwpw) [RGB-part2](https://pan.baidu.com/s/1LahYjJ32j6MkdBhk3Beksw) [RGB-part3](https://pan.baidu.com/s/1wHbBykIZuv-rydh02fyXnA) [RGB-part4](https://pan.baidu.com/s/1q9XqCx-fe--usnkd9Bc1lA) [RGB-part5](https://pan.baidu.com/s/1Qvyt94w2WGKpliqAdjlK6Q)
+  ```python
+  from huggingface_hub import snapshot_download
 
-- RGB-D images: [RGB-D-part1](https://pan.baidu.com/s/127n2swlXOplj88i2Lftsgw) [RGB-D-part2](https://pan.baidu.com/s/11Uu4VjhXyxVBYFT_Hioeng) [RGB-D-part3](https://pan.baidu.com/s/1-9GmlgnGm1zJ7VtjWpbKUg)
+  dataset_dir = snapshot_download(
+      repo_id="fantasylsc/intention-prediction",
+      repo_type="dataset",
+      local_dir="data/intention-prediction",
+  )
+  print(dataset_dir)
+  ```
 
-- Skeleton data: [Skeleton](https://pan.baidu.com/s/1_k7hUam23iLRsU0ID8bldQ)
+  This downloads all files. To download only one modality, pass `allow_patterns=["RGB_images/*"]` to `snapshot_download` (replace `RGB_images` with `RGB-D_images`, `Skeleton_data`, or `Optical_flow`). Extract the downloaded ZIP archives before using them with the scripts below.
 
 If this data set is useful for your research, please refer to our paper: 
 
